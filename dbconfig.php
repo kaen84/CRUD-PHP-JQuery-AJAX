@@ -2,10 +2,10 @@
 
 	global $con;
 
-$hostname = $_ENV["RDS_HOSTNAME"];
-$dbname = $_ENV["RDS_DB_NAME"];
-$user = $_ENV["RDS_USERNAME"];
-$password = $_ENV["RDS_PASSWORD"];
+$hostname = $_SERVER["RDS_HOSTNAME"];
+$dbname = $_SERVER["RDS_DB_NAME"];
+$user = $_SERVER["RDS_USERNAME"];
+$password = $_SERVER["RDS_PASSWORD"];
 
 	$con = mysqli_connect($hostname, $dbname, $user, $password);
 
